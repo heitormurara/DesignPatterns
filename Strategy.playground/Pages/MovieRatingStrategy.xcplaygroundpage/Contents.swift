@@ -3,7 +3,7 @@ import UIKit
 public protocol MovieRatingStrategy {
     var ratingServiceName: String { get }
     
-    func fetchRating(for mo`vieTitle: String, success: (_ rating: String, _ review: String) -> ())
+    func fetchRating(for movieTitle: String, success: (_ rating: String, _ review: String) -> ())
 }
 
 public class RottenTomatoesClient: MovieRatingStrategy {
